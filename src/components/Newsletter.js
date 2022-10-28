@@ -23,7 +23,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
 
   return (
     <Col lg={12}>
-      <div className="newsletter-bx wow slideInUp">
+      {/* <div className="newsletter-bx wow slideInUp">
         <Row>
           <Col lg={12} md={6} xl={5}>
             <h3>
@@ -47,7 +47,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
             </form>
           </Col>
         </Row>
-      </div>
+      </div> */}
     </Col>
   );
 };

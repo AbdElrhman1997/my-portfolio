@@ -142,12 +142,12 @@ span.navbar-text {
 .social-icon a:hover::before {
     transform: scale(1);
 }
-.social-icon a img {
+.social-icon a div {
 	width: 40%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
-.social-icon a:hover img {
+.social-icon a:hover div {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 .navbar-text button {
@@ -540,7 +540,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 13px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
@@ -618,4 +618,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.icon {
+  color: white;
+}
+.icon:hover {
+  color: black;
 }

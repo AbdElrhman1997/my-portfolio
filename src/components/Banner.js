@@ -65,8 +65,13 @@ export const Banner = () => {
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>
-                    {`Hi! I'm Abdelrhman`}{" "}
+                    {
+                      <p style={{ fontSize: "50px", color: "white" }}>
+                        Hi! I'm Abdelrhman
+                      </p>
+                    }{" "}
                     <span
+                      style={{ fontSize: "40px" }}
                       className="txt-rotate"
                       dataPeriod="1000"
                       data-rotate='["Front End Developer", "Back End Developer"]'

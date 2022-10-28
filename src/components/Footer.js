@@ -1,29 +1,42 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { MailchimpForm } from "./MailchimpForm";
 import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-center justify-content-center">
           <MailchimpForm />
           <Col size={12} sm={6}>
             <img src={logo} alt="Logo" />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+              <a
+                href="https://www.linkedin.com/in/abdelrhman-mohamed-73215022a/"
+                target="_blank"
+              >
+                <div>
+                  <FaLinkedinIn className="icon"></FaLinkedinIn>
+                </div>
+              </a>
+              <a href="https://www.facebook.com/abdomo7amed11/" target="_blank">
+                <div>
+                  <FaFacebookF className="icon"></FaFacebookF>
+                </div>
+              </a>
+              <a href="https://github.com/AbdElrhman1997" target="_blank">
+                <div>
+                  <FaGithub className="icon"></FaGithub>
+                </div>
+              </a>
             </div>
             <p>Copyright 2022. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>
     </footer>
-  )
-}
+  );
+};

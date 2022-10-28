@@ -22,12 +22,6 @@ export const Projects = () => {
       liveUrl: "https://homesapp-git-main-abdelrhman1997.vercel.app/",
     },
     {
-      title: "E-Commerce",
-      description: "Angular & TailwindCss & Express & MongoDB",
-      imgUrl: projImg7,
-      liveUrl: "https://medicalapp-g3mnz5n4i-abdelrhman1997.vercel.app/Home",
-    },
-    {
       title: "Fixtools Convertor",
       description: "React & Bootstrap & Express",
       imgUrl: projImg8,
