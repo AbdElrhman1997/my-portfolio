@@ -37,7 +37,7 @@ export const Projects = () => {
       title: "Medical App",
       description: "Angular & TailwindCss",
       imgUrl: projImg4,
-      liveUrl: "https://convertor-abdelrhman1997.vercel.app/",
+      liveUrl: "https://medicalapp-g3mnz5n4i-abdelrhman1997.vercel.app/Home",
     },
     {
       title: "Restaurant App",
