@@ -2,8 +2,11 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import Button from "react-bootstrap/Button";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import CV from "../assets/Abdelrahman_Mohamed.pdf";
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -12,7 +15,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = ["Front End Developer", "Back End Developer"];
-  const period = 2000;
+  const period = 1500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -45,7 +48,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(400);
     } else {
       setIndex((prevIndex) => prevIndex + 1);
     }
@@ -63,25 +66,60 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <span
+                    className="tagline"
+                    style={{ fontSize: "40px", color: "white" }}
+                  >
+                    Welcome to my Portfolio
+                  </span>
                   <h1>
                     {
-                      <p style={{ fontSize: "50px", color: "white" }}>
+                      <p style={{ fontSize: "40px", color: "white" }}>
                         Hi! I'm Abdelrhman
                       </p>
                     }{" "}
                     <span
-                      style={{ fontSize: "40px" }}
-                      className="txt-rotate"
+                      style={{ fontSize: "30px" }}
+                      className="txt-rotate text-white d-block"
                       dataPeriod="1000"
                       data-rotate='["Front End Developer", "Back End Developer"]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  <Button variant="outline" className="btn-cv">
+                    <a href={CV} download>
+                      Download CV
+                    </a>
+                  </Button>
+                  <div className="navbar-text mb-5">
+                    <div className="social-icon">
+                      <a
+                        href="https://www.linkedin.com/in/abdelrhman-mohamed-73215022a/"
+                        target="_blank"
+                      >
+                        <div>
+                          <FaLinkedinIn className="icon"></FaLinkedinIn>
+                        </div>
+                      </a>
+                      <a
+                        href="https://www.facebook.com/abdomo7amed11/"
+                        target="_blank"
+                      >
+                        <div>
+                          <FaFacebookF className="icon"></FaFacebookF>
+                        </div>
+                      </a>
+                      <a
+                        href="https://github.com/AbdElrhman1997"
+                        target="_blank"
+                      >
+                        <div>
+                          <FaGithub className="icon"></FaGithub>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               )}
             </TrackVisibility>
@@ -104,3 +142,9 @@ export const Banner = () => {
     </section>
   );
 };
+
+{
+  /* <button onClick={() => console.log("connect")}>
+                    Let’s Connect <ArrowRightCircle size={25} />
+                  </button> */
+}

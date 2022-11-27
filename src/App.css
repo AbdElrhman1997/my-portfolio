@@ -91,7 +91,7 @@ nav.navbar {
   transition:  0.32s ease-in-out;
 }
 nav.navbar.scrolled {
-  padding: 0px 0;
+  padding: 10px 0;
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
@@ -134,7 +134,7 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: rgba(170, 54, 124, 0.7);
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -233,7 +233,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 170px 0 100px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
@@ -244,7 +244,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
@@ -284,6 +284,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
+}
+.banner .btn-cv {
+  font-size: 25px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%) !important;
+  border: none;
+  outline: rgba(170, 54, 124, 0.5) solid 0.1px;
+  display: block;
+  margin-bottom: 30px;
+}
+.banner .btn-cv a {
+  color: white !important; 
+  text-decoration: none !important;
+}
+.btn-cv:hover {
+  background-color: rgba(170, 54, 124, 0.5) !important;
 }
 @keyframes updown {
     0% {
@@ -418,6 +433,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  width: 90%;
+  height: 90%;
 }
 .proj-imgbx::before {
   content: "";

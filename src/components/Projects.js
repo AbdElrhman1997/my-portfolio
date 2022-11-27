@@ -7,7 +7,8 @@ import projImg4 from "../assets/img/project-4.jpg";
 import projImg5 from "../assets/img/Screenshot 2022-10-17 170506.jpg";
 import projImg6 from "../assets/img/project-5.jpg";
 import projImg7 from "../assets/img/project-6.jpg";
-import projImg8 from "../assets/img/project7.jpg";
+import projImg8 from "../assets/img/project-7.jpg";
+import projImg9 from "../assets/img/project-8.jpg";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -20,42 +21,56 @@ export const Projects = () => {
       description: "React & TailwindCss",
       imgUrl: projImg1,
       liveUrl: "https://homesapp-git-main-abdelrhman1997.vercel.app/",
+      githupUrl: "https://github.com/AbdElrhman1997/React-Real-estates-Project",
     },
     {
       title: "E-Commerce",
       description: "Angular & TailwindCss & Express & MongoDB",
       imgUrl: projImg7,
-      liveUrl: "https://e-commerce.tiiny.site/",
+      liveUrl: "https://e-commerce-abdelrhman1997.vercel.app",
+      githupUrl: "https://github.com/AbdElrhman1997/E-Comerce-Client",
     },
     {
       title: "Fixtools Convertor",
       description: "React & Bootstrap & Express",
       imgUrl: projImg8,
       liveUrl: "https://convertor-abdelrhman1997.vercel.app/",
+      githupUrl: "https://github.com/AbdElrhman1997/convertor-client",
     },
     {
       title: "Medical App",
-      description: "Angular & TailwindCss",
+      description: "Angular & TailwindCss & Angular Material",
       imgUrl: projImg4,
       liveUrl: "https://medicalapp-g3mnz5n4i-abdelrhman1997.vercel.app/Home",
+      githupUrl: "https://github.com/AbdElrhman1997/Angular-MedicalApp",
     },
     {
       title: "Restaurant App",
       description: "React & TailwindCss",
       imgUrl: projImg2,
       liveUrl: "https://reactrestaurant-git-main-abdelrhman1997.vercel.app/",
+      githupUrl: "https://github.com/AbdElrhman1997/React-Restaurant",
     },
     {
       title: "Todo App",
       description: "React & Express & MongoDB",
       imgUrl: projImg3,
       liveUrl: "https://todoapp-abdelrhman1997.vercel.app/",
+      githupUrl: "https://github.com/AbdElrhman1997/MERN-Todo-App",
+    },
+    {
+      title: "Simple Portfolio",
+      description: "HTML & CSS & JS",
+      imgUrl: projImg9,
+      liveUrl: "https://simple-portfolio-abdelrhman1997.vercel.app",
+      githupUrl: "https://github.com/AbdElrhman1997/VanillaJs-Project",
     },
     {
       title: "Social App",
       description: "React & Axios",
       imgUrl: projImg6,
       liveUrl: "https://socialapp-git-main-abdelrhman1997.vercel.app/",
+      githupUrl: "https://github.com/AbdElrhman1997/React-Media-App",
     },
   ];
 

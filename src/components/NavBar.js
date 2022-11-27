@@ -5,8 +5,8 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
-import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BrowserRouter as Router } from "react-router-dom";
+import { FaCode } from "react-icons/fa";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -35,7 +35,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            <FaCode className="text-white fs-1"></FaCode>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -71,32 +71,18 @@ export const NavBar = () => {
               >
                 Projects
               </Nav.Link>
+              <Nav.Link
+                href="#contact"
+                className={
+                  activeLink === "projects"
+                    ? "active navbar-link"
+                    : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("projects")}
+              >
+                Contact Us
+              </Nav.Link>
             </Nav>
-            <span className="navbar-text">
-              <div className="social-icon">
-                <a
-                  href="https://www.linkedin.com/in/abdelrhman-mohamed-73215022a/"
-                  target="_blank"
-                >
-                  <div>
-                    <FaLinkedinIn className="icon"></FaLinkedinIn>
-                  </div>
-                </a>
-                <a
-                  href="https://www.facebook.com/abdomo7amed11/"
-                  target="_blank"
-                >
-                  <div>
-                    <FaFacebookF className="icon"></FaFacebookF>
-                  </div>
-                </a>
-                <a href="https://github.com/AbdElrhman1997" target="_blank">
-                  <div>
-                    <FaGithub className="icon"></FaGithub>
-                  </div>
-                </a>
-              </div>
-            </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
