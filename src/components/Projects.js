@@ -55,7 +55,7 @@ export const Projects = () => {
       title: "Todo App",
       description: "React & Express & MongoDB",
       imgUrl: projImg3,
-      liveUrl: "https://todoapp-abdelrhman1997.vercel.app/",
+      liveUrl: "https://todo-app-abdelrhman1997.vercel.app/",
       githupUrl: "https://github.com/AbdElrhman1997/MERN-Todo-App",
     },
     {
