@@ -39,7 +39,7 @@ export const Banner = () => {
     if (isDeleting) {
       setDelta((prevDelta) => prevDelta / 2);
     }
-
+// new comment
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
       setIndex((prevIndex) => prevIndex - 1);
