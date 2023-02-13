@@ -5,7 +5,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import Button from "react-bootstrap/Button";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import CV from "../assets/Abdelrahman_Mohamed.pdf";
+import CV from "../assets/Abdulrahman Mohamed.docx";
 import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export const Banner = () => {
@@ -14,7 +14,7 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Front End Developer", "Back End Developer"];
+  const toRotate = ["Front End Developer"];
   const period = 1500;
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export const Banner = () => {
     if (isDeleting) {
       setDelta((prevDelta) => prevDelta / 2);
     }
-// new comment
+    // new comment
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
       setIndex((prevIndex) => prevIndex - 1);
@@ -82,7 +82,7 @@ export const Banner = () => {
                       style={{ fontSize: "30px" }}
                       className="txt-rotate text-white d-block"
                       dataPeriod="1000"
-                      data-rotate='["Front End Developer", "Back End Developer"]'
+                      data-rotate='["Front End Developer"]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
