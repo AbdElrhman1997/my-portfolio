@@ -48,8 +48,8 @@ function About() {
                 Frontend Developer with +1 Year Of Experience with all stages of
                 the development cycle for dynamic web projects , Familiar with
                 Javascript Modern Frameworks Like React ,Angular and Project
-                management with Agile methodology , Looking for Frontend Remote
-                Job opportunity.
+                management with Agile methodology , Looking for Frontend Job
+                opportunity.
               </p>
               <div className="col-span-12">
                 <button class="btn">

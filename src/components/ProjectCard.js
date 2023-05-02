@@ -13,7 +13,7 @@ export const ProjectCard = ({
       <div className="proj-imgbx cursor-pointer mx-auto">
         <img src={imgUrl} />
         <div className="proj-txtx">
-          <h4>{title}</h4>
+          <h5>{title}</h5>
           <p>{description}</p>
           <a className="text-white" href={`${liveUrl}`} target="_blank">
             <FaLink className="icon fs-3 m-2"></FaLink>

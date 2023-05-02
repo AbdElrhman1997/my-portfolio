@@ -9,7 +9,7 @@ import social from "../assets/img/social.jpg";
 import fixTools from "../assets/img/fixTool.jpg";
 import portfolio from "../assets/img/portfolio.jpg";
 import amirPort from "../assets/img/amirPort.jpg";
-
+import e_commerce_react from "../assets/img/e-commerce-react.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -17,18 +17,25 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const Projects = [
     {
+      title: "E-Commerce-React",
+      description: " React & Redux & TailwindCss & Express & MongoDB",
+      imgUrl: e_commerce_react,
+      liveUrl: "https://e-commerce-2-abdelrhman1997.vercel.app/",
+      githupUrl: "https://github.com/AbdElrhman1997/E-Commerce-React",
+    },
+    {
+      title: "E-Commerce-Angular",
+      description: "Angular & TailwindCss & Express & MongoDB",
+      imgUrl: e_commerce,
+      liveUrl: "https://e-commerce-angular-abdelrhman1997.vercel.app/",
+      githupUrl: "https://github.com/AbdElrhman1997/E-Comerce-Angular",
+    },
+    {
       title: "Real State App",
       description: "React & TailwindCss",
       imgUrl: RealState,
       liveUrl: "https://homesapp-git-main-abdelrhman1997.vercel.app/",
       githupUrl: "https://github.com/AbdElrhman1997/React-Real-estates-Project",
-    },
-    {
-      title: "E-Commerce",
-      description: "Angular & TailwindCss & Express & MongoDB",
-      imgUrl: e_commerce,
-      liveUrl: "https://e-commerce-abdelrhman1997.vercel.app",
-      githupUrl: "https://github.com/AbdElrhman1997/E-Comerce-Client",
     },
     {
       title: "Fixtools Convertor",

@@ -5,7 +5,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import Button from "react-bootstrap/Button";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import CV from "../assets/Abdulrahman Mohamed.docx";
+import CV from "../assets/Abdulrahman Mohamed.pdf";
 import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export const Banner = () => {
